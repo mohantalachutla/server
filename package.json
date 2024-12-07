@@ -1,0 +1,52 @@
+{
+  "name": "mongoapi",
+  "version": "1.0.0",
+  "description": "just a mongo server",
+  "main": "main.js",
+  "license": "ISC",
+  "private": true,
+  "author": {
+    "name": "Mohan Talachutla",
+    "email": "mohan.talachutla@gmail.com"
+  },
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "start:mongo": "mongo-express --url mongodb://localhost:27017/crypto",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "formidable": "^1.2.2",
+    "http-errors": "^1.8.0",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.14",
+    "morgan": "^1.10.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "supports-color": "^9.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "mongo-express": "^1.0.0",
+    "nodemon": "^2.0.9",
+    "sharp": "^0.33.5",
+    "yarn": "^1.22.19",
+    "typescript": "^4.7.4"
+  }
+}
